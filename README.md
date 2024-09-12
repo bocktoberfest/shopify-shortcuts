@@ -1,0 +1,3 @@
+# SETUP
+1. Drag [this link](javascript:(function()%7Bjavascript%3A fetch(location.pathname %2B '.json') .then(resp %3D> resp.json()).then(data %3D> %7B%0A  const prefix %3D %60https%3A%2F%2F%24%7Blocation.hostname%7D%2Fadmin%60%0A  if (data.product) %7B%0A    window.open(%60%24%7Bprefix%7D%2Fproducts%2F%24%7Bdata.product.id%7D%60%2C '_blank')%3B%0A  %7D else if (data.collection) %7B%0A    window.open(%60%24%7Bprefix%7D%2Fcollections%2F%24%7Bdata.collection.id%7D%60%2C '_blank')%3B%0A  %7D%0A%7D)%3B%7D)()%3B) to your bookmarks bar.
+2. Click the bookmark from any PDP or Collection page to instantly open the corresponding Shopify admin page. 
